@@ -11,9 +11,51 @@ The first version will come out soon! Stay tuned!
 
 ---
 
-## 📌 About
+## 📀 DEMO
 
 # <a href="https://auth.demo.mabgl.com/" target="_blank">DEMO</a>
+
+---
+
+## 💻 Installation
+
+** [ 1 ] ** Drag 'n' drop the archive into your webspace
+
+** [ 2 ] ** Import `s.sql` into your db
+
+** [ 3 ] ** Head to `/src/config.php` and replace the sample credentials with yours.
+
+** [ 4 ] ** Check for function
+
+** NOTICE **
+
+Place for all pages that shoud be protected this part ❗ after ❗ the `'require_once ...'`:
+
+### V1 - Commentless kick player from page to dedicated location.
+
+```php
+if (!isset($_SESSION['user_id'])) {
+    header('Location: /login/');
+    exit;
+}
+```
+
+### V2 - Show player a notice (either with `die` or `include`)
+
+```php
+if (!isset($_SESSION['user_id'])) {
+    die("You are not Logged-in!<br><a href="/login/">Login</a>");
+    exit;
+}
+```
+
+```php
+// COMMING SOON!
+if (!isset($_SESSION['user_id'])) {
+    die(include('not-logged-in-page.php'));
+    exit;
+}
+```
 
 ---
 
