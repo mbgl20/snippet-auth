@@ -1,0 +1,58 @@
+body {
+	font-family: Arial, sans-serif;
+	background: #f4f4f4;
+	margin: 25px;
+	padding: 0;
+}
+
+.container {
+	/* Container for the Auth System! Cooming soon! (Just hate frontend...) */
+}
+
+h1, h2 {
+	/* text-align: center; */
+}
+
+input[type="text"],
+input[type="password"] {
+	/* width: 100%; */
+	padding: 8px;
+	margin: 5px 0 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button {
+	/* width: 100%; */
+	padding: 10px;
+	background: #28a745;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #218838;
+}
+
+.error {
+	color: #d9534f;
+	text-align: center;
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #007bff;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #000;
+	text-decoration: underline;
+}
