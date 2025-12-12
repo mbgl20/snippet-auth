@@ -34,7 +34,7 @@ Place for all pages that shoud be protected this part ❗ after ❗ the `'requir
 ### V1 - Commentless kick player from page to dedicated location.
 
 ```php
-if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION['id'])) {
     header('Location: /login/');
     exit;
 }
@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id'])) {
 ### V2 - Show player a notice (either with `die` or `include`)
 
 ```php
-if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION['id'])) {
     die("You are not Logged-in!<br><a href="/login/">Login</a>");
     exit;
 }
@@ -51,7 +51,7 @@ if (!isset($_SESSION['user_id'])) {
 
 ```php
 // COMMING SOON!
-if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION['id'])) {
     die(include('not-logged-in-page.php'));
     exit;
 }
