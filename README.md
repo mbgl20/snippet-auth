@@ -1,4 +1,4 @@
-<h1 align="center">mbGallery</h1>
+<h1 align="center">snippet-auth</h1>
 <p align="center">login • register • logout • settings</p>
 
 ---
