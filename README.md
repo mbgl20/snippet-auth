@@ -61,15 +61,11 @@ if (!isset($_SESSION['id'])) {
 
 ## 🔧 Planed work
 
- • Login
-
- • Register
-
- • Logout
-
- • Settings
-
  • E-Mail verfify
+
+ • Profile Pictures
+
+ • Administrator Panel incl. roles
 
  • ...
 
