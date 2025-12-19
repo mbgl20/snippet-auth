@@ -30,7 +30,7 @@
 				Password: <b><?= gud($uid, 'pw') ?></b> - Try to unshash it! :)
 			</p>
 			
-			<a href="src/logout.php">Logout</a>
+			<a href="/settings/>Settings</a> - <a href="/src/logout.php">Logout</a>
 		</div>
 	</body>
 </html>
